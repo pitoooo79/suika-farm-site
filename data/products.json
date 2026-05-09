@@ -1,0 +1,34 @@
+[
+  {
+    "name": "小玉スイカ（2玉入り）",
+    "description": "食べきりサイズで大人気。甘みがぎゅっと詰まった小玉です。",
+    "price": "2,500円（税込）",
+    "status": "販売中",
+    "image": "images/product-suika-01.jpg",
+    "alt": "小玉スイカとカットした赤い果肉"
+  },
+  {
+    "name": "大玉スイカ（1玉）",
+    "description": "シャリシャリ食感と甘さが自慢。ご家庭用におすすめです。",
+    "price": "3,200円（税込）",
+    "status": "販売中",
+    "image": "images/product-suika-02.jpg",
+    "alt": "大玉スイカとカットスイカ"
+  },
+  {
+    "name": "スイカギフト（大玉1玉）",
+    "description": "贈答用にぴったりの大玉スイカ。化粧箱入りでお届けします。",
+    "price": "3,800円（税込）",
+    "status": "予約受付中",
+    "image": "images/product-suika-03.jpg",
+    "alt": "贈答用の箱入りスイカ"
+  },
+  {
+    "name": "訳ありスイカ（大玉）",
+    "description": "見た目にキズあり、味は正規品。お得に楽しめます。",
+    "price": "2,000円（税込）",
+    "status": "今季終了",
+    "image": "images/product-suika-04.jpg",
+    "alt": "訳ありスイカ"
+  }
+]
