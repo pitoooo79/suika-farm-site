@@ -277,20 +277,95 @@ a {
 
 .button-instagram,
 .button-footer-instagram {
-  color: var(--orange);
-  background: var(--white);
-  border-color: var(--orange);
+  position: relative;
+  overflow: hidden;
+  gap: 12px;
+  min-width: 190px;
+  color: var(--white);
+  font-size: 17px;
+  font-weight: 900;
+  text-shadow: 0 2px 10px rgba(111, 16, 128, 0.24);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.18), transparent 44%),
+    linear-gradient(105deg, #ff9d00 0%, #ff4a35 28%, #e21aa4 62%, #7b16d9 100%);
+  border-color: rgba(255, 255, 255, 0.48);
+  box-shadow:
+    0 14px 28px rgba(130, 22, 160, 0.25),
+    0 6px 14px rgba(255, 126, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.42),
+    inset 0 -3px 0 rgba(93, 12, 135, 0.28);
 }
 
 .button-instagram::before,
 .button-footer-instagram::before {
   content: "";
-  flex: 0 0 26px;
-  width: 26px;
-  height: 26px;
-  margin-right: 8px;
-  background: url("../images/icon-camera.png") center / cover no-repeat;
+  position: relative;
+  z-index: 1;
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  margin-right: 0;
+  background:
+    radial-gradient(circle at 50% 50%, transparent 0 7px, var(--white) 7.5px 10px, transparent 10.5px),
+    radial-gradient(circle at 72% 27%, var(--white) 0 3.5px, transparent 4px);
+  border: 3px solid var(--white);
+  border-radius: 9px;
+}
+
+.button-instagram::after,
+.button-footer-instagram::after {
+  content: "";
+  position: relative;
+  z-index: 1;
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  margin-left: 4px;
+  background:
+    linear-gradient(45deg, transparent 44%, #8e22d7 45% 58%, transparent 59%) 44% 50% / 14px 14px no-repeat,
+    var(--white);
   border-radius: 50%;
+}
+
+.instagram-panel-button {
+  min-height: 64px;
+  min-width: min(100%, 330px);
+  padding-inline: 28px;
+  font-size: clamp(19px, 2.4vw, 24px);
+  box-shadow:
+    0 18px 36px rgba(130, 22, 160, 0.28),
+    0 8px 18px rgba(255, 126, 0, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.48),
+    inset 0 -4px 0 rgba(93, 12, 135, 0.3);
+}
+
+.instagram-panel-button::before {
+  flex-basis: 38px;
+  width: 38px;
+  height: 38px;
+  border-width: 4px;
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at 50% 50%, transparent 0 9px, var(--white) 9.5px 13px, transparent 13.5px),
+    radial-gradient(circle at 72% 27%, var(--white) 0 4.5px, transparent 5px);
+}
+
+.instagram-panel-button::after {
+  flex-basis: 38px;
+  width: 38px;
+  height: 38px;
+  background:
+    linear-gradient(45deg, transparent 44%, #8e22d7 45% 58%, transparent 59%) 44% 50% / 17px 17px no-repeat,
+    var(--white);
+}
+
+.header-actions .button-instagram {
+  min-width: 168px;
+  padding-inline: 16px;
+}
+
+.mobile-menu-actions .button-instagram {
+  width: 100%;
 }
 
 .button-outline {
@@ -1457,6 +1532,15 @@ h2 {
   .footer-nav {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .footer-actions {
+    width: min(100%, 360px);
+    flex-direction: column;
+  }
+
+  .footer-actions .button {
+    width: 100%;
   }
 
   .fixed-line-button {
