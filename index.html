@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="鳥取の自然で育てた採れたてスイカを販売する農園のホームページです。">
+  <title>冨山農園</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@500;700&family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=20260510-line-bg-clean">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="冨山農園 トップへ">
+      <span class="logo-mark" aria-hidden="true">
+        <!-- ロゴ画像を差し替える場合は images/logo-icon.png を置き換えてください -->
+        <img src="images/logo-icon.png" alt="">
+      </span>
+      <span>
+        <strong>冨山農園</strong>
+        <small>TOMIYAMA FARM</small>
+      </span>
+    </a>
+    <nav class="header-nav" aria-label="メインナビゲーション">
+      <a href="#about">農園について</a>
+      <a href="#products">商品紹介</a>
+      <a href="#news">お知らせ</a>
+      <a href="#access">アクセス</a>
+    </nav>
+    <!-- LINEリンクは js/main.js の LINE_URL でも変更できます -->
+    <div class="header-actions">
+      <a class="button button-line" href="#" data-line-link>LINEで注文する</a>
+      <a class="button button-instagram" href="#" aria-label="Instagramを見る">Instagram</a>
+    </div>
+    <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-controls="mobile-menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <div id="mobile-menu" class="mobile-menu" hidden>
+    <nav class="mobile-menu-nav" aria-label="スマホ用ナビゲーション">
+      <a href="#about">農園について</a>
+      <a href="#products">商品紹介</a>
+      <a href="#news">お知らせ</a>
+      <a href="#access">アクセス</a>
+    </nav>
+    <div class="mobile-menu-actions">
+      <a class="button button-line" href="#" data-line-link>LINEで注文する</a>
+      <a class="button button-instagram" href="#">Instagram</a>
+    </div>
+  </div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <!-- ヒーロー画像はCSSの .hero-bg-1〜3 で変更できます -->
+        <span class="hero-bg-layer hero-bg-1"></span>
+        <span class="hero-bg-layer hero-bg-2"></span>
+        <span class="hero-bg-layer hero-bg-3"></span>
+      </div>
+      <div class="hero-content">
+        <p class="hero-label">鳥取の採れたてスイカ直送</p>
+        <h1><span>甘さ</span>ぎゅっと、<br>夏のごちそう</h1>
+        <p class="hero-copy">鳥取の自然で育てた採れたてスイカを、食卓へ。</p>
+        <div class="hero-badges" aria-label="農園の特徴">
+          <span>たっぷりの太陽</span>
+          <span>こだわりの土づくり</span>
+          <span>安心・安全</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="section-inner about-grid">
+        <div class="about-text">
+          <p class="section-kicker">About Farm</p>
+          <h2>農園について</h2>
+          <p>冨山農園は、鳥取の自然豊かな土地で、土づくりから収穫まで一玉ひと玉に愛情を込めて育てています。</p>
+          <p>完熟のタイミングを見極めて収穫し、その日のうちに発送。新鮮な甘みとみずみずしさをお届けします。</p>
+          <div class="farm-points" aria-label="冨山農園のこだわり">
+            <span>朝採れ発送</span>
+            <span>完熟収穫</span>
+            <span>家族で栽培</span>
+          </div>
+          <a class="button button-outline" href="#access">詳しく見る</a>
+        </div>
+        <div class="about-media">
+          <div class="image-frame main-photo">
+            <!-- 差し替え画像: images/farm.jpg -->
+            <img src="images/farm.jpg" alt="山に囲まれたスイカ畑">
+          </div>
+          <div class="postcard image-frame">
+            <!-- 差し替え画像: images/product-suika-01.jpg -->
+            <img src="images/product-suika-01.jpg" alt="畑に並んだ収穫前のスイカ">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section products-section">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-kicker">Products</p>
+          <h2>商品紹介</h2>
+        </div>
+        <div id="product-list" class="product-grid" aria-live="polite">
+          <p class="loading-text">商品を読み込んでいます。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section line-order-section" aria-labelledby="line-order-title">
+      <div class="section-inner line-order">
+        <div>
+          <p class="section-kicker">Order</p>
+          <h2 id="line-order-title">LINEでかんたん注文！</h2>
+          <p>ご希望の商品・数量・お届け先をLINEで送るだけでOK。やり取りもスムーズで安心です。</p>
+        </div>
+        <!-- LINEリンクは js/main.js の LINE_URL でも変更できます -->
+        <a class="button button-line button-large" href="#" data-line-link>LINEで注文する</a>
+      </div>
+    </section>
+
+    <section class="section social-news-section">
+      <div class="section-inner two-column">
+        <section class="panel instagram-panel" aria-labelledby="instagram-title">
+          <div class="panel-content">
+            <p class="section-kicker">Instagram</p>
+            <h2 id="instagram-title">Instagram</h2>
+            <p>農園の様子やスイカの成長を発信中。ぜひフォローしてください。</p>
+            <a class="button button-outline" href="#">Instagramを見る</a>
+          </div>
+          <div class="instagram-thumbs">
+            <div class="image-frame">
+              <!-- 差し替え画像: images/instagram-sample.jpg -->
+              <img src="images/instagram-sample.jpg" alt="Instagram投稿サンプルの農園写真">
+            </div>
+            <div class="image-frame">
+              <img src="images/product-suika-02.jpg" alt="Instagram投稿サンプルのカットスイカ">
+            </div>
+          </div>
+        </section>
+
+        <section id="news" class="panel news-panel" aria-labelledby="news-title">
+          <p class="section-kicker">News</p>
+          <h2 id="news-title">お知らせ</h2>
+          <div id="news-list" class="news-list" aria-live="polite">
+            <p class="loading-text">お知らせを読み込んでいます。</p>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="access" class="section access-section">
+      <div class="section-inner access-grid">
+        <div class="access-info">
+          <p class="section-kicker">Access</p>
+          <h2>アクセス</h2>
+          <p>〒123-4567<br>鳥取県〇〇市〇〇町1234</p>
+          <p>TEL：090-1234-5678</p>
+          <p>営業時間：9:00〜17:00<br>定休日：不定休</p>
+          <a class="button button-outline" href="#" aria-label="Googleマップで見る">Googleマップで見る</a>
+        </div>
+        <div class="map-embed" aria-label="Googleマップ埋め込み欄">
+          <!-- Googleマップのiframeコードはここに差し替えてください -->
+          <div class="map-placeholder">Google Map</div>
+        </div>
+        <div class="access-photo image-frame">
+          <img src="images/farm.jpg" alt="農園周辺の山と畑の風景">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="logo footer-logo" href="#top" aria-label="冨山農園 トップへ">
+        <span class="logo-mark" aria-hidden="true">
+          <!-- ロゴ画像を差し替える場合は images/logo-icon.png を置き換えてください -->
+          <img src="images/logo-icon.png" alt="">
+        </span>
+        <span>
+          <strong>冨山農園</strong>
+          <small>TOMIYAMA FARM</small>
+        </span>
+      </a>
+      <nav class="footer-nav" aria-label="フッターナビゲーション">
+        <a href="#about">農園について</a>
+        <a href="#products">商品紹介</a>
+        <a href="#news">お知らせ</a>
+        <a href="#access">アクセス</a>
+      </nav>
+      <div class="footer-actions">
+        <a class="button button-line" href="#" data-line-link>LINEで注文する</a>
+        <a class="button button-footer-instagram" href="#">Instagram</a>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 冨山農園</p>
+  </footer>
+
+  <!-- スマホ用の固定注文ボタン。LINEリンクは js/main.js の LINE_URL で変更できます -->
+  <a class="fixed-line-button" href="#" data-line-link>LINEで注文する</a>
+
+  <script src="js/main.js?v=20260526-gas-data"></script>
+</body>
+</html>
